@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CYBER SECURITY</title>
+</head>
+<body>
+    <nav class="px-4 py-4 bg-purple-900 text-white flex justify-between " >
+        <span class="text-x1 flex items-center mx-3 font-bold">MREC CYBER SECURITY</span>
+        <ul class="   flex justify-end" >
+            <li class=" hover:bg-purple-600 rounded px-3   mx-2 cursor-pointer "><a href="index.html">HOME</a></li>
+            <li class="hover:bg-purple-600 rounded px-3  mx-2 cursor-pointer"><a href="#">ASSIGNMENTS</a></li>
+            <li class="hover:bg-purple-600 rounded px-3  mx-2 cursor-pointer"><a href="#">MIDS</a></li>
+    
+             
+              <li class="relative" x-data="{dropdownOpen:false}">
+                <button
+                  href="#"
+                  class=" hover:bg-purple-600 rounded px-3   mx-2 cursor-pointer "
+                  @click="dropdownOpen = !dropdownOpen"
+                >
+                 SEM
+                </button>
+              
+                <div
+                  class="right-0 p-2 mt-1 bg-white rounded-md shadow lg:absolute"
+                  :class="{'hidden':!dropdownOpen,'flex flex-col':dropdownOpen}"
+                  @click.away="dropdownOpen = false"
+                >
+                  <ul class="space-y-2 lg:w-48">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black"
+                        >SEM 2-1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black"
+                        >SEM 2-2</a
+                      >
+                    </li>
+                   
+                  </ul>
+                </div>
+             
+              </li>
+            
+        </ul>
+
+    </nav>
+
+  <main >
+    <div class="buttons space-y-20 space-x-56 m-10  text-white ">
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif">WT LAB</button>
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif">DBMS LAB</button>
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif" > CN LAB</button>
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif">FAI NOTES</button>
+       
+    </div>
+    <div class="buttons m-10 space-y-10 space-x-52 text-white ">
+
+        
+        
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif">DBMS NOTES</button>
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif">WT NOTES</button>
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif">CN NOTES</button>
+        <button class="bg-purple-800 px-8 py-5 font-bold outline-black rounded-3xl space-y-10 hover:bg-purple-600 active:bg-black font-serif"">NT NOTES</button>
+       
+       
+  
+
+</main>
+</body>
+</html>
